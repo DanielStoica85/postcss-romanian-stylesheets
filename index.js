@@ -9,12 +9,11 @@ module.exports = postcss.plugin('postcss-romanian-stylesheets', function (opts) 
 
         // Transform CSS AST here
         root.walkDecls((decl) => {
-            console.log(decl.prop);
-            console.log(decl.value);
 
             // Properties
             decl.prop = decl.prop.replace('fundal', 'background');
             decl.prop = decl.prop.replace('familie-font', 'font-family');
+            
             // Values
             decl.value = decl.value.replace('rosu', 'red');
         });
