@@ -1,0 +1,38 @@
+{
+  "name": "postcss-romanian-stylesheets",
+  "version": "0.0.0",
+  "description": "PostCSS plugin for writing Romanian Style Sheets.",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "romanian"
+  ],
+  "author": "Daniel <dansto13@yahoo.com>",
+  "license": "MIT",
+  "repository": "DanielStoica85/postcss-romanian-stylesheets",
+  "bugs": {
+    "url": "https://github.com/DanielStoica85/postcss-romanian-stylesheets/issues"
+  },
+  "homepage": "https://github.com/DanielStoica85/postcss-romanian-stylesheets",
+  "dependencies": {
+    "postcss": "^6.0.16"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-postcss": "^2.0.2",
+    "jest": "^22.4.2"
+  },
+  "scripts": {
+    "test": "jest && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5",
+    "env": {
+      "jest": true
+    }
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
