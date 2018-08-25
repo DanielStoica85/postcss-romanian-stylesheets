@@ -1,6 +1,6 @@
 # PostCSS Romanian Stylesheets [![Build Status][ci-img]][ci]
 
-[PostCSS] plugin for writing Romanian Style Sheets..
+[PostCSS] plugin for writing Romanian Style Sheets.
 
 [PostCSS]: https://github.com/postcss/postcss
 [ci-img]:  https://travis-ci.org/DanielStoica85/postcss-romanian-stylesheets.svg
