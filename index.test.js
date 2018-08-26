@@ -10,17 +10,34 @@ function run(input, output, opts) {
         });
 }
 
-/* Write tests here
-
-it('does something', () => {
-    return run('a{ }', 'a{ }', { });
-});
-
-*/
-
 describe('postcss-romanian-stylesheets', () => {
+    // Properties
     it('converts fundal to background.', () => {
         return run('a{ fundal: red; }', 'a{ background: red; }', {});
     });
+    it('converts nume-animatie to animation-name.', () => {
+        return run('a{ nume-animatie: a; }', 'a{ animation-name: a; }', {});
+    });
+    it('converts animatie to animation.', () => {
+        return run('a{ animatie: cool; }', 'a{ animation: cool; }', {});
+    });
+    it('converts sus to top.', () => {
+        return run('a{ sus: 0; }', 'a{ top: 0; }', {});
+    });
+    it('converts jos to bottom.', () => {
+        return run('a{ jos: 0; }', 'a{ bottom: 0; }', {});
+    });
+    it('converts stanga to left.', () => {
+        return run('a{ stanga: 0; }', 'a{ left: 0; }', {});
+    });
+    it('converts dreapta to right.', () => {
+        return run('a{ dreapta: 0; }', 'a{ right: 0; }', {});
+    });
+    // Values
+    it('converts rosu to red.', () => {
+        return run('a{ fundal: rosu; }', 'a{ background: red; }', {});
+    });
+    it('converts relativ to relative.', () => {
+        return run('a{ pozitie: relativ; }', 'a{ position: relative; }', {});
+    });
 });
-
